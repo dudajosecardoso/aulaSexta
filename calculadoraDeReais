@@ -1,0 +1,35 @@
+n1 = int(input("Digite o primeiro número: "))
+n2 = int(input("Digite o segundo número: "))
+operacao = input("Digite qual operação deseja realizar: ")
+
+
+def soma(n1,n2):
+    soma = n1 + n2
+    print(soma)
+        
+
+def subtracao(n1, n2):
+    subtracao = n1 - n2
+    print(subtracao)
+    
+def divisao(n1 , n2):
+    divisao = n1 / n2
+    print(divisao)
+    
+def multiplicacao(n1 , n2):
+    multiplicacao = n1 * n2
+    print(multiplicacao)
+    
+def main():
+    if operacao == "soma":
+        soma (n1, n2)
+        
+    elif operacao == "subtração":
+        subtracao (n1, n2)
+        
+    elif operacao == "divisão":
+        divisao (n1,n2)
+        
+    elif operacao == "multiplicação":
+        multiplicacao(n1,n2)
+main()
