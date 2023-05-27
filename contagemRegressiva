@@ -1,0 +1,9 @@
+def contagem_regressiva(numero):
+    if numero == 0:
+        print("Decolar!")
+    else:
+        print(numero)
+        contagem_regressiva(numero - 1)
+
+numero_digitado = int(input("Digite um número para iniciar a contagem regressiva: "))
+contagem_regressiva(numero_digitado)
