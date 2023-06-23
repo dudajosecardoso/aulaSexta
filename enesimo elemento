@@ -1,0 +1,14 @@
+def extrair_elemento(lista):
+    n = int(input("Digite o número de índice: "))
+    try:
+        elementos = [tupla[n] for tupla in lista]
+        return elementos
+    except IndexError:
+        print("Erro: Índice inválido.")
+        return []
+    except TypeError:
+        print("Erro: A lista deve conter tuplas.")
+        return []
+lista = [("Rodrigo", 14), ("João", 25), ("Maria", 8)]
+elementos = extrair_elemento(lista)
+print(elementos) 
