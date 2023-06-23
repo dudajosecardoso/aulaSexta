@@ -1,0 +1,11 @@
+import math
+
+def calcular_raiz_quadrada(n):
+    if n < 0:
+        print("Número digitado inválido.")
+    else:
+        raiz_quadrada = math.sqrt(n)
+        print("A raiz quadrada de", n, "é", raiz_quadrada)
+
+numero = float(input("Digite um número: "))
+calcular_raiz_quadrada(numero)
