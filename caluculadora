@@ -1,0 +1,23 @@
+def soma(a, b):
+    return a + b
+
+def subtracao(a, b):
+    return a - b
+
+def multiplicacao(a, b):
+    return a * b
+
+def divisao(a, b):
+    if b != 0:
+        return a / b
+    else:
+        return "Erro: Divisão por zero"
+
+
+valor1 = float(input("Digite o primeiro valor: "))
+valor2 = float(input("Digite o segundo valor: "))
+
+print("Soma:", soma(valor1, valor2))
+print("Subtração:", subtracao(valor1, valor2))
+print("Multiplicação:", multiplicacao(valor1, valor2))
+print("Divisão:", divisao(valor1, valor2))
