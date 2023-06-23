@@ -1,0 +1,11 @@
+def power(a, b):
+    if b == 0:
+        return 1
+    elif b % 2 == 0:
+        half_power = power(a, b // 2)
+        return half_power * half_power
+    else:
+        half_power = power(a, (b - 1) // 2)
+        return a * half_power * half_power
+resultado = power(3, 4)
+print(resultado)  
