@@ -1,0 +1,11 @@
+def ordenar_string(string):
+    palavras = string.split('-')
+    palavras_ordenadas = sorted(palavras)
+    string_ordenada = '-'.join(palavras_ordenadas)
+    return string_ordenada
+string = "vermelho-verde-preto-branco"
+string_ordenada = ordenar_string(string)
+print(string_ordenada) 
+
+
+# Saída: "branco-preto-verde-vermelho"
