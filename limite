@@ -1,0 +1,14 @@
+def verificar_soma(a, b, limite):
+    soma = a + b
+    if soma > limite:
+        return True
+    else:
+        return False
+
+# Exemplo de uso
+numero1 = float(input("Digite o primeiro número: "))
+numero2 = float(input("Digite o segundo número: "))
+limite = float(input("Digite o limite: "))
+
+resultado = verificar_soma(numero1, numero2, limite)
+print(resultado)
