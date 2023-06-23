@@ -1,0 +1,8 @@
+def calcular_produto():
+    a = float(input("Digite o primeiro valor: "))
+    b = float(input("Digite o segundo valor: "))
+    c = float(input("Digite o terceiro valor: "))
+    produto = a * b * c
+    return produto
+resultado = calcular_produto()
+print(resultado)
