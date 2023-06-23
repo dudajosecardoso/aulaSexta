@@ -1,0 +1,12 @@
+def encontrar_strings_maior_que_n(lista, n):
+    resultado = []
+    for palavra in lista:
+        if len(palavra) > n:
+            resultado.append(palavra)
+    return resultado
+
+lista = ["Rodrigo", "Maria", "João", "Zé"]
+n = int(input("Digite o valor de n: "))
+
+strings_maior_que_n = encontrar_strings_maior_que_n(lista, n)
+print(strings_maior_que_n)
