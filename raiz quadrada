@@ -1,0 +1,24 @@
+def calcular_raiz_quadrada(n):
+    if n < 0:
+        raise ValueError("Não é possível calcular a raiz quadrada de um número negativo.")
+    if n == 0:
+        return 0
+
+    # Chute inicial
+    x = n
+
+    while True:
+        raiz_aproximada = 0.5 * (x + n / x)
+        if abs(raiz_aproximada - x) < 1e-9:  
+            break
+        x = raiz_aproximada
+
+    return raiz_aproximada
+
+numero = float(input("Digite um número: "))
+
+try:
+    raiz_quadrada = calcular_raiz_quadrada(numero)
+    print("A raiz quadrada de", numero, "é", raiz_quadrada)
+except ValueError as e:
+    print(e)
